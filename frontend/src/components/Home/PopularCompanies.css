@@ -1,0 +1,86 @@
+/* campanies */
+.companies {
+  background: #f1f3f6;
+  padding: 50px 0;
+}
+.companies .container {
+  min-width: 1500px;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.companies .container .banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.companies .container .banner .card {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  gap: 15px;
+}
+.companies .container .banner .card:hover {
+  transition: all 0.3s;
+  box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+}
+.companies .container .banner .card .content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.companies .container .banner .card .content .icon {
+  padding: 10px;
+  font-size: 24px;
+  color: #2d3456;
+  background: rgb(45, 52, 86, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companies .container .banner .card .content .text p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.companies .container .banner .card .content .text p:last-child {
+  font-size: 15px;
+  color: gray;
+}
+.companies .container .banner .card button {
+  color: #2d3456;
+  background: rgb(45, 52, 86, 0.1);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 7px 0;
+  margin-top: 10px;
+}
+@media (max-width: 1520px) {
+  .companies .container {
+    min-width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .companies .container .banner {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .companies .container .banner .card {
+    width: 420px;
+  }
+}
+@media (max-width: 470px) {
+  .companies .container .banner .card {
+    width: 100%;
+  }
+}

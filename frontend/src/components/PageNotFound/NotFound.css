@@ -1,0 +1,72 @@
+/* not found */
+.notfound {
+  min-height: 750px;
+}
+.notfound .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notfound .content a {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 7px 30px;
+  background: transparent;
+  border: 1px solid #2d3456;
+  color: #2d3456;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 25px;
+}
+.notfound .content a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+.notfound .content a::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #2d3456;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+.notfound .content a:hover {
+  color: #ffffff;
+  border: 1px solid #2d3456;
+}
+
+.notfound .content a:hover:before {
+  top: -35%;
+  background-color: #2d3456;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.notfound .content a:hover:after {
+  top: -45%;
+  background-color: #2d3456;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+/* .notfound .content a:hover {
+  background: #2d3456;
+  transition: all 0.3s;
+  color: #f1f3f6;
+} */

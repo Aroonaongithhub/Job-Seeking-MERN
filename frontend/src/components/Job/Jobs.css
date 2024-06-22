@@ -1,0 +1,74 @@
+/* jobs */
+.jobs {
+  background: #f1f3f6;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+.jobs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1500px;
+  gap: 35px;
+  margin-top: 40px;
+}
+.jobs .container .banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px 0;
+}
+.jobs .container .banner .card {
+  background: #fff;
+  text-decoration: none;
+  width: 320px;
+  height: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jobs .container .banner .card:hover {
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2d3456;
+  transition: all 0.5s ease-in-out;
+}
+.jobs .container .banner .card p:first-child {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.jobs .container .banner .card p:nth-child(2) {
+  font-size: 1.3rem;
+  color: gray;
+}
+.jobs .container .banner .card p:last-child {
+  font-size: 1rem;
+  color: gray;
+}
+.jobs .container .banner .card a {
+  text-decoration: none;
+  padding: 7px;
+  font-size: 20px;
+  color: #2d3456;
+  background: rgb(45, 52, 86, 0.1);
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 1520px) {
+  .jobs .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 1060px) {
+  .jobs .container .banner .card {
+    width: 360px;
+  }
+}
+@media (max-width: 795px) {
+  .jobs .container .banner .card {
+    width: 100%;
+  }
+}

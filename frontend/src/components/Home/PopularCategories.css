@@ -1,0 +1,72 @@
+/* categories */
+.categories {
+  min-width: 1500px;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 0;
+  gap: 35px;
+}
+.categories h3 {
+  text-align: center;
+}
+.categories .banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 20px 0;
+}
+.categories .banner .card {
+  width: 320px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  /* gap: 12px; */
+  background: #f1f3f6;
+}
+.categories .banner .card:hover {
+  transition: all 0.3s;
+  box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+}
+.categories .banner .card .icon {
+  font-size: 24px;
+  padding: 10px;
+  color: rgb(45, 52, 86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categories .banner .card .text p:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.categories .banner .card .text p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: gray;
+}
+@media (max-width: 1520px) {
+  .categories {
+    min-width: 100%;
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 714px) {
+  .categories {
+    align-items: center;
+  }
+  .categories .banner {
+    justify-content: center;
+  }
+}
+@media (max-width: 350px) {
+  .categories .banner .card {
+    width: 100%;
+  }
+}

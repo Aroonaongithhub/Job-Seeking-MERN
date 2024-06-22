@@ -1,0 +1,128 @@
+/* hero  */
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  padding: 75px 0 50px 0;
+}
+.heroSection .container,
+.heroSection .details {
+  min-width: 1500px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.heroSection .container {
+  display: flex;
+  height: 100vh;
+  margin-bottom: 1.75rem;
+}
+.heroSection .container .title,
+.heroSection .container .image {
+  flex: 1;
+}
+.heroSection .container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.heroSection .container .title h1 {
+  max-width: 600px;
+}
+.heroSection .container .title p {
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+.heroSection .container .image {
+  overflow: hidden;
+}
+.heroSection .container .image img {
+  width: 100%;
+  height: 100%;
+}
+.heroSection .details {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.heroSection .details .card {
+  display: flex;
+  align-items: center;
+  background: rgb(45, 52, 86, 0.1);
+  width: 220px;
+}
+.heroSection .details .card .icon {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  color: #2d3456;
+}
+.heroSection .details .card .content p:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+.heroSection .details .card .content p:nth-child(2) {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+.heroSection .details .card:hover {
+  transition: all 0.3s;
+  box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+}
+@media (max-width: 1520px) {
+  .heroSection .container,
+  .heroSection .details {
+    min-width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .heroSection .container {
+    flex-direction: column-reverse;
+    position: relative;
+    min-height: 600px;
+  }
+  .heroSection .container .title {
+    z-index: 1;
+    text-align: center;
+  }
+  .heroSection .container .title h1,
+  .heroSection .container .title p {
+    max-width: 100%;
+  }
+  .heroSection .container .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .heroSection .details {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+  .heroSection .details .card {
+    width: 300px;
+    flex: none;
+  }
+}
+@media (max-width: 670px) {
+  .heroSection .details .card {
+    max-width: 350px;
+    min-width: 350px;
+  }
+}
+@media (max-width: 400px) {
+  .heroSection .details .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
